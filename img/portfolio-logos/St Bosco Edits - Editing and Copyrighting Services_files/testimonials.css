@@ -1,0 +1,55 @@
+.carouseldiv {
+    padding: 10rem !important;
+  }
+
+/* .carousel-caption {
+    position: inherit;
+} */
+
+.carousel-caption h3 {
+    font-weight: 600;
+}
+
+/* .carousel-caption p {
+    font-size: 5rem;
+} */
+
+.testimonial {
+    opacity: .8;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    padding: 0 120px;
+    text-transform: uppercase;
+}
+
+.fa-quote-right {
+    color: #e3ad31;
+}
+
+.page-section-special {
+    padding-top: 4rem;
+    padding-bottom: .2rem;
+}
+
+.special-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  
+  }
+
+/* Added above to creative.css but wasn't working???*/
+
+
+/* contact form css */
+
+
+.effect-16, 
+.effect-17, 
+.effect-18{border: 0; padding: 4px 0; border-bottom: 1px solid #ccc; background-color: transparent;}
+
+.effect-16 ~ .focus-border{position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background-color: #4caf50; transition: 0.4s;}
+.effect-16:focus ~ .focus-border,
+.has-content.effect-16 ~ .focus-border{width: 100%; transition: 0.4s;}
+.effect-16 ~ label{position: absolute; left: 0; width: 100%; top: 9px; color: #aaa; transition: 0.3s; z-index: -1; letter-spacing: 0.5px;}
+.effect-16:focus ~ label, .has-content.effect-16 ~ label{top: -16px; font-size: 12px; color: #4caf50; transition: 0.3s;}
