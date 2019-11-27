@@ -12234,11 +12234,32 @@ i:hover {
 
 
 @media (max-width: 556px) {
-  #services h1, #portfolio h1, #contact h1 {
+
+  #services h1,
+  #portfolio h1,
+  #contact h1 {
     font-size: 2rem;
   }
 
-  #services h3  {
+  #services h3 {
     font-size: 1.3rem;
+  }
+}
+
+/* Mobile portfolio changes */
+
+@media (max-width: 380px) {
+
+  #portfolio h4 {
+    font-size: 1rem;
+    padding-top: 0px;
+  }
+
+  #portfolio figure p {
+    font-size: .8rem;
+  }
+
+  ficaption {
+    padding-top: 0 !important
   }
 }
