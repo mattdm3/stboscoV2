@@ -30,6 +30,7 @@
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "5.9.0",
+        "aos": "^2.3.4",
         "bootstrap": "4.3.1",
         "jquery": "3.4.1",
         "jquery.easing": "^1.4.1",

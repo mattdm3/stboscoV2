@@ -49,6 +49,14 @@
 }
 
 html {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+html {
   font-family: "Oswald", sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -647,8 +655,8 @@ pre code {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .no-gutters {
@@ -11741,6 +11749,7 @@ hr.light {
   -webkit-transition: background-color 0.2s ease;
   transition: background-color 0.2s ease;
 
+
 }
 
 #mainNav .navbar-brand {
@@ -11830,7 +11839,51 @@ header.masthead {
 }
 
 header.masthead h1 {
-  font-size: 5rem;
+  font-size: 4rem;
+  height: 3.5em;
+  width: 75%;
+
+}
+
+/* .typing {
+  position: relative;
+} */
+
+.typing::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 1em;
+  border-right: 3px solid #fff;
+  transform: translateY(10px);
+  animation: blink 0.7s infinite ease;
+
+}
+
+/* .masthead h1::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  border-right: 3px solid #fff;
+  transform: translateY(10px);
+  animation: blink 0.5s infinite ease;
+
+} */
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 456px) {
+  header.masthead h1 {
+    font-size: 5rem;
+  }
 }
 
 @media (min-width: 556px) {
@@ -11925,6 +11978,30 @@ header.masthead h1 {
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
 }
+
+.portfolio {
+  display: flex;
+  flex-direction: row;
+  padding: 30px 30px 0 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio img {
+  width: 60px;
+  opacity: 0.5;
+  padding: 20px 15px;
+  transition-duration: .7s;
+}
+
+.portfolio img:hover {
+  transform: scale(1.2);
+  opacity: 1;
+  transition-duration: .7s;
+  cursor: pointer;
+}
+
+
 
 /* Matteo CSS */
 

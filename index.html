@@ -31,18 +31,10 @@
 
 
   <!-- Google Fonts -->
-  <!-- <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'> -->
+
   <link href="https://fonts.googleapis.com/css?family=Oswald:600&display=swap" rel="stylesheet">
 
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
-
-
-
-  <!-- Plugin CSS -->
-  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
-
-
 
   <!-- Added Bootstrap CDN -->
 
@@ -66,6 +58,9 @@
 
   <!-- imagehover.css  -->
   <link rel="stylesheet" href="css/imagehover.min.css">
+
+  <!-- AOS on hover effects -->
+  <link rel="stylesheet" href="./node_modules/aos/dist/aos.css" />
 
 
 </head>
@@ -111,9 +106,8 @@
   <header class="masthead">
     <div class="container h-100">
       <div class="row h-100 align-items-start justify-content-start">
-        <div class="col-lg-10 align-self-end pt-2">
-          <h1 class="text-uppercase text-white">YOUR MESSAGE MATTERS.</h1>
-          <!-- <hr class="divider my-4"> -->
+        <div class="col-lg-10 align-self-end pt-2 wrapper">
+          <h1 class="text-uppercase text-white typing pt-2"></h1>
         </div>
         <div class="col-lg-8 align-self-baseline">
           <p class="text-white-75 font-weight-light mb-5">Don’t let dangling participles, excess words, or poor design
@@ -132,17 +126,19 @@
 
         <!-- New container with picture and content -->
         <div class="container p-4">
-          <div class="d-flex row justify-content-center p-3">
+          <div class="d-flex row justify-content-center p-3 ">
             <!-- picture column -->
-            <div class="justify-content-end px-3">
+            <div data-aos="fade-right" data-aos-once="true" data-aos-offset="180" data-aos-duration="900"
+              class="justify-content-end px-3">
               <!--//removed col-lg-6 col-md-6 col-sm-6 -->
               <div class="img-thumbnail rounded-circle rounded-sm img-fluid ">
                 <img class="rounded-circle img-fluid rounded-sm"
-                  src="img/portfolio/fullsize/Bethany-profile-square_sm.gif">
+                  src="img/portfolio/fullsize/Bethany-profile-square_sm1.png">
               </div>
             </div>
             <!-- Text and button Column -->
-            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 pt-lg-4 p-3 px-md-5">
+            <div data-aos="fade-left" data-aos-once="true" data-aos-offset="190" data-aos-duration="900"
+              class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 pt-lg-4 p-3 px-md-5">
               <!--removed class="col-lg-6  col-sm-12" p-2 p-xl-5 px-md-6 p-sm-0  py-md-3 px-sm-5  -->
               <!-- Section title -->
               <h2 class="text-white mt-0 display-4">Hello! I'm Bethany.</h2>
@@ -163,9 +159,9 @@
   <!-- Services Section -->
   <section class="page-section" id="services">
     <div class="container">
-      <h1 class="text-center mt-0">At Your Service</h1>
-      <hr class="divider my-4">
-      <div class="row">
+      <h1 data-aos="fade-up" data-aos-duration="800" data-aos-once="true" class="text-center mt-0">At Your Service</h1>
+      <hr data-aos="fade-up" data-aos-duration="800" data-aos-once="true" class="divider my-4">
+      <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" class="row">
         <div class="col-lg-3 col-md-6 text-center">
           <div class="mt-5">
             <i class="fas fa-4x far fa-file text-primary mb-4"></i>
@@ -208,36 +204,51 @@
   <!-- carousel and testimonials -->
 
   <section class="page-section bg-dark" id="Testimonials">
-    <h1 class="text-center text-light">Client Feedback</h1>
-    <hr class="divider mt-4">
-    <div id="carousel" class="carousel slide bg-dark text-white py-md-4" data-ride="pause">
+    <h1 data-aos="fade-up" data-aos-duration="800" data-aos-once="true" class="text-center text-light">Client Feedback
+    </h1>
+    <hr data-aos="fade-up" data-aos-duration="800" data-aos-once="true" class="divider mt-4">
+    <div data-aos="fade-up" data-aos-duration="800" data-aos-once="true" id="carousel"
+      class="carousel slide bg-dark text-white py-md-4" data-ride="pause">
       <div class="carousel-inner py-2">
         <div class="carousel-item active">
           <div class="testimonal-container">
             <div class="text-white text-center p-3 px-4">
-              <i class="fas fa-quote-right fa-2x p-2"></i>
-              <p class="testimonial">Clear, professional, and worked well with my schedule for my doctoral thesis. I
-                highly recommend!</p>
-              <p>- Shu, <em>pastor in Richmond Hill, ON</em></p>
+
+              <div class="testimonials px-5">
+                <i class="fas fa-quote-right fa-2x p-2"></i>
+                <p class="testimonial">Clear, professional, and worked well with my schedule for my doctoral
+                  thesis. I
+                  highly recommend!</p>
+                <p>- Shu, <em>pastor in Richmond Hill, ON</em></p>
+              </div>
             </div>
           </div>
         </div>
         <div class="carousel-item">
           <div class="testimonal-container">
             <div class="text-white text-center p-3 px-4">
-              <i class="fas fa-quote-right fa-2x p-2"></i>
-              <p class="testimonial">What we expected and more!</p>
-              <p>- Jake, <em>pastor in Vancouver, BC</em></p>
+
+              <div class="testimonials px-5">
+                <i class="fas fa-quote-right fa-2x p-2"></i>
+                <p class="testimonial">What we expected and more!</p>
+                <p>- Jake, <em>pastor in Vancouver, BC</em></p>
+              </div>
+
             </div>
           </div>
         </div>
         <div class="carousel-item">
           <div class="testimonal-container">
             <div class="text-white text-center p-3 px-4 ">
-              <i class="fas fa-quote-right fa-2x p-2"></i>
-              <p class="testimonial">I was very satisfied with the edits to my novel. Bethany was easy to work with and
-                she seemed to understand exactly what I was looking for in an editor. Great editor! </p>
-              <p>- Jon, <em>young adult fantasy novelist in Vancouver, BC</em></p>
+
+              <div class="testimonials px-4">
+                <i class="fas fa-quote-right fa-2x p-2"></i>
+                <p class="testimonial">I was very satisfied with the edits to my novel. Bethany was easy to work with
+                  and
+                  she seemed to understand exactly what I was looking for in an editor. Great editor! </p>
+                <p>- Jon, <em>young adult fantasy novelist in Vancouver, BC</em></p>
+              </div>
+
             </div>
           </div>
         </div>
@@ -264,202 +275,71 @@
   </section>
 
   <!-- new portfolio  -->
+
   <section id="portfolio">
-    <h1 class="text-center mt-0">Recent Work</h1>
-    <hr class="divider my-4">
+    <h1 data-aos="fade-down" data-aos-once="true" data-aos-offset="190" data-aos-duration="900"
+      class="text-center mt-0">Recent Partners</h1>
+    <hr data-aos="fade-down" data-aos-once="true" data-aos-offset="190" data-aos-duration="900" class="divider my-4">
     <div class="container-fluid pt-0">
-      <div class="row justify-content-center">
-        <figure class="imghvr-flip-diag-1">
-          <img class="pt-7 px-3" src="img/portfolio-logos/cucumber-logo-400.svg">
-          <figcaption class="portfolioCaption pt-5 text-dark">
-            <h4 class="text-dark">Cucumber Marketing</h4>
-            <p>
-              <i class="fas fa-pencil-alt"></i> Copyediting for blog posts <br>
-              <i class="fas fa-pencil-alt"></i> Copyediting for web content <br>
-            </p>
+      <section>
 
-            <button class="btn-port"><a href="https://www.cucumbermarketing.com/" target="_blank">Visit</a></button>
+        <div class="portfolio">
+          <div data-aos="fade-right" data-aos-once="true" data-aos-offset="190" data-aos-duration="900" class="company"
+            id="company1">
+            <a href="http://www.christcitychurch.ca" target="_blank">
+              <img src="/img/portfolio-logos/christCity-logo.png" alt="">
+            </a>
+          </div>
+          <div data-aos="fade-right" data-aos-once="true" data-aos-offset="190" data-aos-duration="900" class="company"
+            id="company2">
+            <a href="https://www.cucumbermarketing.com/" target="_blank"><img
+                src="/img/portfolio-logos/cucumber-logo-400.png" alt=""></a>
 
+          </div>
+          <div data-aos="fade-left" data-aos-once="true" data-aos-offset="190" data-aos-duration="900" class="company"
+            id="company3">
+            <a href="https://www.newventurescanada.com/" target="_blank"><img
+                src="/img/portfolio-logos/NV+Full+Color_hor_w+blk.png" alt=""></a>
 
+          </div>
+          <div data-aos="fade-left" data-aos-once="true" data-aos-offset="190" data-aos-duration="900" class="company"
+            id="company4">
+            <a href="https://www.twu.ca/" target="_blank">
+              <img src="/img/portfolio-logos/TWU-logo.png" alt="">
+            </a>
 
-          </figcaption>
-        </figure>
-        <figure class="imghvr-flip-diag-1">
-          <img class="py-5" src="img/portfolio-logos/christCity-logo.jpeg">
-          <figcaption class=" portfolioCaption text-dark">
-            <h4 class="text-dark">Christ City Church</h4>
-            <p>
-              <i class="fas fa-pencil-alt"></i> Copyediting and coordinating for blog posts <br>
-              <i class="fas fa-pencil-alt"></i> Copyediting for a teaching booklet <br>
-            </p>
+          </div>
+          <div data-aos="fade-left" data-aos-once="true" data-aos-offset="190" data-aos-duration="900" class="company"
+            id="company5">
+            <a href="https://www.amazon.ca/Gutsy-Adventures-Canadian-Church-Planting/dp/0995305404" target="_blank">
+              <img src="/img/portfolio-logos/gutsy-logo.png" alt="">
+            </a>
+          </div>
+          <div data-aos="fade-right" data-aos-once="true" data-aos-offset="190" data-aos-duration="900" class="company"
+            id="company6">
+            <a href="https://www.teenhaven.ca/" target="_blank">
+              <img src="/img/portfolio-logos/teen-haven.png" alt="">
+            </a>
 
-            <button class="btn-port"><a href="https://www.christcitychurch.ca/" target="_blank">Visit</a></button>
-
-
-
-          </figcaption>
-        </figure>
-        <figure class="imghvr-flip-diag-1">
-          <img class="py-5 px-3" src=" img/portfolio-logos/NV+Full+Color_hor_w+blk.png">
-          <figcaption class="portfolioCaption pt-5 text-dark">
-            <h4 class="text-dark">New Ventures</h4>
-            <p>
-              <i class="fas fa-pencil-alt"></i> Content creation <br>
-              <i class="fas fa-pencil-alt"></i> Website management <br>
-              <i class="fas fa-pencil-alt"></i> Newsletter production
-            </p>
-
-            <button class="btn-port"><a href="https://www.newventurescanada.com/" target="_blank">Visit</a></button>
-
-
-
-          </figcaption>
-        </figure>
-        <figure class="imghvr-flip-diag-1">
-          <img class="py-5" src="img/portfolio-logos/TWU-logo.jpeg">
-          <figcaption class="portfolioCaption text-dark">
-            <h4 class="text-dark">Trinity Western University</h4>
-            <p>
-              <i class="fas fa-pencil-alt"></i> Writing clear, on-brand copy for brochures, fundraising campains, and
-              reports <br>
-            </p>
-
-            <button class="btn-port"><a href="https://www.twu.ca/" target="_blank">Visit</a></button>
-
-          </figcaption>
-
-      </div>
-      <div class="row justify-content-center">
-        </figure>
-        <figure class="novel imghvr-hinge-left">
-          <img src="img/portfolio-logos/gutsy-logo.jpeg">
-          <figcaption class="portfolioCaption pt-7 text-dark">
-            <h4 class="text-dark">Book: Gutsy</h4>
-            <p>
-              <i class="fas fa-pencil-alt"></i> Copyediting for this novel tracing stories of Canadian church plants.
-              Published by New Leaf Network
-              Press
-              in Canada.
-              <br>
-            </p>
-
-            <button class="btn-port"><a
-                href="https://www.amazon.ca/Gutsy-Adventures-Canadian-Church-Planting/dp/0995305404/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr="
-                target="_blank">Gutsy on Amazon</a></button>
-
-          </figcaption>
-        </figure>
-        <figure class="novel imghvr-hinge-left">
-          <img src="img/portfolio-logos/skyblind.jpeg">
-          <figcaption class="portfolioCaption pt-7 text-dark">
-            <h4 class="text-dark">Book: Skyblind</h4>
-            <p>
-              <i class="fas fa-pencil-alt"></i> Copyediting for this young adults fantasy novel. Self-published.
-              <br>
-            </p><button class="btn-port"><a href="https://www.amazon.ca/s?k=skyblind&i=stripbooks&ref=nb_sb_noss"
-                target="_blank">Skyblind on Amazon</a></button>
-
-          </figcaption>
-        </figure>
+          </div>
+          <div data-aos="fade-left" data-aos-once="true" data-aos-offset="190" data-aos-duration="900" class="company"
+            id="company7">
+            <a href="http://www.amazon.ca/Skyblind-J-R-Fehr-ebook/dp/B01GIU4CYA" target="_blank">
+              <img src="/img/portfolio-logos/skyblind2.png" alt=""></a>
+          </div>
 
 
+        </div>
+
+        <div class="row justify-content-center pt-5">
+          <a class="btn btn-primary btn-xl js-scroll-trigger ml-3" href="#contact">Contact</a>
+        </div>
 
 
-      </div>
-
-      <div class="row justify-content-center pb-5">
-        <a class="btn btn-primary btn-xl js-scroll-trigger ml-3" href="#contact">Contact</a>
-      </div>
+      </section>
+    </div>
   </section>
 
-
-  <!-- Portfolio Section -->
-
-  <!-- <section id="portfolio">
-    <div class="container-fluid p-0">
-      <div class="row no-gutters">
-        <div class="col-lg-4 col-sm-6 ">
-          <a class="portfolio-box" href="img/new-portfolio/1.png">
-            <img class="img-fluid" src="img/new-portfolio/1.png" alt="">
-            <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">
-                Category
-              </div>
-              <div class="project-name">
-                Project Name
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/new-portfolio/2.png">
-            <img class="img-fluid" src="img/new-portfolio/2.png" alt="">
-            <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">
-                Category
-              </div>
-              <div class="project-name">
-                Project Name
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/new-portfolio/3.png">
-            <img class="img-fluid" src="img/new-portfolio/3.png" alt="">
-            <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">
-                Category
-              </div>
-              <div class="project-name">
-                Project Name
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/new-portfolio/4.png">
-            <img class="img-fluid" src="img/new-portfolio/4.png" alt="">
-            <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">
-                Category
-              </div>
-              <div class="project-name">
-                Project Name
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/new-portfolio/5.png">
-            <img class="img-fluid" src="img/new-portfolio/5.png" alt="">
-            <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">
-                Copyediting
-              </div>
-              <div class="project-name">
-                Skyblind
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/new-portfolio/6.png" title="SKYBLIND | I provided copyediting for this young adults fantasy novel. Self-published.
-          ">
-            <img class="img-fluid" src="img/new-portfolio/6.png" alt="">
-            <div class="portfolio-box-caption p-3">
-              <div class="project-category text-white-50">
-                Copyediting
-              </div>
-              <div class="project-name">
-                Skyblind
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section> -->
 
   <!-- ORIGINAL Call to Action Section
     
@@ -517,7 +397,7 @@
 
         <!--Grid column-->
         <div class="col-md-9 mb-md-0 mb-5 text-white">
-          <form id="contact-form" name="contact-form" action="POST" data-netlify="true">
+          <form id="contact-form" name="bosco-contact-form" action="POST" data-netlify="true">
 
             <!--Grid row-->
             <div class="row">
@@ -570,13 +450,15 @@
             </div>
             <!--Grid row-->
 
-          </form>
 
-          <div class="text-center text-md-left">
-            <a class="btn btn-primary btn-xl" onclick="validateForm()">Send</a>
-          </div>
-          <div class="status" id="status"></div>
+
+            <div class="text-center text-md-left">
+              <button class="btn btn-primary btn-xl" type="submit">Send</button>
+            </div>
+            <div class="status" id="status"></div>
         </div>
+
+        </form>
         <!--Grid column-->
 
         <!--Grid column-->
@@ -632,10 +514,9 @@
 
   <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <!-- <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script> -->
 
   <!-- Custom scripts for this template -->
-  <!-- <script src="js/creative.min.js"></script> -->
   <script src="js/creative.js"></script>
 
   <script src="js/testimonials.js"></script>
@@ -643,8 +524,13 @@
   <!-- media script -->
   <script href="css/media.css" rel="stylesheet"></script>
 
-  <!-- MAtteo scripts for this template
-  <script src="js/custom.js"></script> -->
+
+  <!-- on scroll animation script -->
+  <script src="./node_modules/aos/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
 
 
 
