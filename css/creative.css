@@ -12341,6 +12341,17 @@ i:hover {
   }
 }
 
+#portfolio img {
+  width: 270px !important;
+  /* opacity: .5; */
+}
+
+
+#portfolio .row {
+  padding: 0 100px 30px 100px;
+}
+
+
 
 /* BTN HOVER */
 
