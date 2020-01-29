@@ -1,6 +1,6 @@
 # St Bosco Edits
 
-(stboscoedits.com)
+https://www.stboscoedits.com
 
 ### a single page responsive website for a local copyediting business using bootstrap and jQuery.
 
