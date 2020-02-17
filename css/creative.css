@@ -12286,7 +12286,7 @@ i:hover {
   opacity: .8;
   font-size: 1.2rem;
   letter-spacing: 2px;
-  padding-top: 10px;
+  padding-top: 10px 50px;
   text-transform: uppercase;
 }
 
@@ -12322,6 +12322,7 @@ i:hover {
   #services h3 {
     font-size: 1.3rem;
   }
+
 }
 
 /* Mobile portfolio changes */

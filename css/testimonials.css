@@ -16,12 +16,16 @@
 
 .testimonial {
     opacity: .8;
-    font-size: 1.1rem;
+    font-size: 1rem;
     letter-spacing: 2px;
     /* padding: 0 120px; */
+    padding: 10px 50px;
     text-transform: uppercase;
     /* height: 200px; */
 }
+
+
+
 
 .testimonials {
     display: flex;
@@ -32,14 +36,17 @@
     padding: 0 20px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     .testimonial {
         font-size: .9rem;
+        padding: 10px 20px 0 20px;
+
     }
 
     .testimonials i {
         font-size: 1.5rem;
     }
+
 }
 
 @media only screen and (max-width: 500px) {
